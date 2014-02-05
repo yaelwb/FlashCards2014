@@ -22,6 +22,8 @@
 		8D6510F8189C3E2F00219DE7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6510D7189C3E2E00219DE7 /* UIKit.framework */; };
 		8D651100189C3E2F00219DE7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D6510FE189C3E2F00219DE7 /* InfoPlist.strings */; };
 		8D651102189C3E2F00219DE7 /* FlashCards2014Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D651101189C3E2F00219DE7 /* FlashCards2014Tests.m */; };
+		8D9447A018A1FE4E00262E26 /* FCCardsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D94479F18A1FE4E00262E26 /* FCCardsView.m */; };
+		8D9447A318A20F4600262E26 /* FCCardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9447A218A20F4600262E26 /* FCCardsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,10 @@
 		8D6510FD189C3E2F00219DE7 /* FlashCards2014Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlashCards2014Tests-Info.plist"; sourceTree = "<group>"; };
 		8D6510FF189C3E2F00219DE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D651101189C3E2F00219DE7 /* FlashCards2014Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlashCards2014Tests.m; sourceTree = "<group>"; };
+		8D94479E18A1FE4E00262E26 /* FCCardsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCCardsView.h; sourceTree = "<group>"; };
+		8D94479F18A1FE4E00262E26 /* FCCardsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCCardsView.m; sourceTree = "<group>"; };
+		8D9447A118A20F4600262E26 /* FCCardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCCardsViewController.h; sourceTree = "<group>"; };
+		8D9447A218A20F4600262E26 /* FCCardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCCardsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +130,10 @@
 				8D6510EC189C3E2F00219DE7 /* FCSecondViewController.m */,
 				8D6510EE189C3E2F00219DE7 /* Images.xcassets */,
 				8D6510DA189C3E2E00219DE7 /* Supporting Files */,
+				8D94479E18A1FE4E00262E26 /* FCCardsView.h */,
+				8D94479F18A1FE4E00262E26 /* FCCardsView.m */,
+				8D9447A118A20F4600262E26 /* FCCardsViewController.h */,
+				8D9447A218A20F4600262E26 /* FCCardsViewController.m */,
 			);
 			path = FlashCards2014;
 			sourceTree = "<group>";
@@ -259,7 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D6510E0189C3E2F00219DE7 /* main.m in Sources */,
+				8D9447A318A20F4600262E26 /* FCCardsViewController.m in Sources */,
 				8D6510EA189C3E2F00219DE7 /* FCFirstViewController.m in Sources */,
+				8D9447A018A1FE4E00262E26 /* FCCardsView.m in Sources */,
 				8D6510E4189C3E2F00219DE7 /* FCAppDelegate.m in Sources */,
 				8D6510ED189C3E2F00219DE7 /* FCSecondViewController.m in Sources */,
 			);
