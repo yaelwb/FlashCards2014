@@ -7,12 +7,22 @@
 //
 
 #import "FCSecondViewController.h"
+#import "FCCardsView.h"
 
 @interface FCSecondViewController ()
 
 @end
 
 @implementation FCSecondViewController
+
+
+/*-(void) loadView
+{
+    CGRect frame = [[UIScreen mainScreen]bounds];
+    FCCardsView *v = [[FCCardsView alloc]initWithFrame:frame];
+    [self setView:v];
+}*/
+
 
 - (void)viewDidLoad
 {

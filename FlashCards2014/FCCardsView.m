@@ -9,6 +9,7 @@
 #import "FCCardsView.h"
 
 @implementation FCCardsView
+@synthesize cardsColor;
 
 - (id)initWithFrame:(CGRect)frame
 {
