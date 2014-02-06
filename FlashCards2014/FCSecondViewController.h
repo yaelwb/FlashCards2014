@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FCSecondViewController : UIViewController
+@interface FCSecondViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end

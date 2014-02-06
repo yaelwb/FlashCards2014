@@ -14,20 +14,34 @@
 @end
 
 @implementation FCSecondViewController
-
-
-/*-(void) loadView
 {
-    CGRect frame = [[UIScreen mainScreen]bounds];
-    FCCardsView *v = [[FCCardsView alloc]initWithFrame:frame];
-    [self setView:v];
-}*/
-
+    NSArray *words;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    //Later on, the data will be loaded from a model, and some will be added on the fly
+    words = [NSMutableArray arrayWithObjects:@"Articulate", @"Recuperate", @"Diligent", @"Mundane", @"Procrastinate", @"Tenatcious", nil];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [words count];
+}
+
+-(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *wordsTableIdentifier = @"wordsTableCell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:wordsTableIdentifier];
+    
+    if(cell == nil)
+    {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:wordsTableIdentifier];
+    }
+    cell.textLabel.text = [words objectAtIndex:indexPath.row];
+    return cell;
 }
 
 - (void)didReceiveMemoryWarning
