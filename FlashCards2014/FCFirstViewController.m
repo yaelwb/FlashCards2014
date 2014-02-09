@@ -26,4 +26,19 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)next:(id)sender
+{
+}
+
+- (IBAction)showDef:(id)sender
+{
+    [definition setText:@"Def"];
+}
+
+- (IBAction)showHint:(id)sender
+{
+    [hint setText:@"Hint"];
+}
+
+
 @end

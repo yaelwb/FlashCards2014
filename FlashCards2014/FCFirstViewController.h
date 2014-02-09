@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface FCFirstViewController : UIViewController
-
+{
+    IBOutlet UILabel *word;
+    IBOutlet UILabel *definition;
+    IBOutlet UILabel *hint;
+}
+- (IBAction)next:(id)sender;
+- (IBAction)showHint:(id)sender;
+- (IBAction)showDef:(id)sender;
 @end
