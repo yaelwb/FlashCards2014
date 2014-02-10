@@ -44,4 +44,16 @@
     [wordToScore setValue:[NSNumber numberWithInt:0] forKey:word];*/
 }
 
+-(void) incIndex
+{
+    index++;
+    if(index == [_words count])
+        index = 0;
+}
+
+-(int) index
+{
+    return index;
+}
+
 @end

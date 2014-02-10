@@ -9,7 +9,9 @@
 #import "FCFirstViewController.h"
 
 @interface FCFirstViewController ()
-
+@property (weak, nonatomic) IBOutlet UILabel *word;
+@property (weak, nonatomic) IBOutlet UILabel *definition;
+@property (weak, nonatomic) IBOutlet UILabel *hint;
 @end
 
 @implementation FCFirstViewController
@@ -32,14 +34,12 @@
 
 - (IBAction)showDef:(id)sender
 {
-    UIFont *font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
-    [definition setFont:font];
-    [definition setText:@"Def"];
+    [_definition setText:@"Def"];
 }
 
 - (IBAction)showHint:(id)sender
 {
-    [hint setText:@"Hint"];
+    [_hint setText:@"Hint"];
 }
 
 

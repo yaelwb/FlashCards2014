@@ -11,4 +11,7 @@
 @interface FCDictionary : NSObject
 @property (strong, nonatomic) NSMutableArray *words;
 
+-(void) incIndex;
+-(int) index;
+
 @end

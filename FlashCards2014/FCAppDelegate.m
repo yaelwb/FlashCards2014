@@ -7,12 +7,25 @@
 //
 
 #import "FCAppDelegate.h"
+#import "FCFirstViewController.h"
+#import "FCSecondViewController.h"
+#import "FCDictionary.h"
 
 @implementation FCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    FCDictionary* dictionary = [[FCDictionary alloc] init];
+    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+    if ([[tabBarController viewControllers] count] < 2)
+        return YES;
+        
+    FCFirstViewController *firstController = [tabBarController viewControllers][0];
+    [firstController setDictionary:dictionary];
+    FCSecondViewController *secondController = [tabBarController viewControllers][1];
+    [secondController setDictionary:dictionary];
     return YES;
 }
 							

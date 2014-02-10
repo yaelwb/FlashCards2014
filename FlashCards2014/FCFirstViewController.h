@@ -7,13 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FCDictionary.h"
 
 @interface FCFirstViewController : UIViewController
-{
-    IBOutlet UILabel *word;
-    IBOutlet UILabel *definition;
-    IBOutlet UILabel *hint;
-}
+
+@property (strong, nonatomic) FCDictionary* dictionary;
+
 - (IBAction)next:(id)sender;
 - (IBAction)showHint:(id)sender;
 - (IBAction)showDef:(id)sender;

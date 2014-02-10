@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FCDictionary.h"
 
 @interface FCSecondViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property (strong, nonatomic) FCDictionary* dictionary;
 
 @end

@@ -7,10 +7,8 @@
 //
 
 #import "FCSecondViewController.h"
-#import "FCDictionary.h"
 
 @interface FCSecondViewController ()
-@property (strong, nonatomic) FCDictionary *dictionary;
 @end
 
 @implementation FCSecondViewController
@@ -18,7 +16,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _dictionary = [[FCDictionary alloc] init];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
