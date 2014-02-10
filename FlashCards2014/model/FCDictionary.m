@@ -22,7 +22,7 @@
     {
         if(!_words)
         {
-            _words = [[NSMutableArray alloc] initWithObjects:@"Articulate", @"Recuperate", @"Diligent", @"Mundane", @"Procrastinate", @"Tenatcious", nil];
+            _words = [[NSMutableArray alloc] initWithObjects:@"Articulate", @"Diligent", @"Mundane", @"Procrastinate", @"Recuperate", @"Tenatcious", nil];
         }
         /*wordsBucket = [[NSMutableArray alloc] init];
         knownWords = [[NSMutableArray alloc] init];
@@ -55,5 +55,18 @@
 {
     return index;
 }
+-(NSString*) getNextWord
+{
+    if(!_words || [_words count] ==0)
+        return @"Please add words";
+    [self incIndex];
+    return _words[index];
+}
 
+-(NSString*) getFirstWord
+{
+    if(!_words || [_words count] ==0)
+        return @"Please add words";
+    return _words[0];
+}
 @end

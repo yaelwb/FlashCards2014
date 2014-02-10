@@ -19,6 +19,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [_word setText:[_dictionary getFirstWord]];
+
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -30,6 +32,7 @@
 
 - (IBAction)next:(id)sender
 {
+    [_word setText:[_dictionary getNextWord]];
 }
 
 - (IBAction)showDef:(id)sender

@@ -13,5 +13,7 @@
 
 -(void) incIndex;
 -(int) index;
+-(NSString*) getNextWord;
+-(NSString*) getFirstWord;
 
 @end
