@@ -32,6 +32,8 @@
 
 - (IBAction)showDef:(id)sender
 {
+    UIFont *font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+    [definition setFont:font];
     [definition setText:@"Def"];
 }
 

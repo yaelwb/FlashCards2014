@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D3D99FE18A8A67500D9C7AE /* FCCardsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D99FD18A8A67500D9C7AE /* FCCardsView.m */; };
+		8D3D9A0218A8A6C300D9C7AE /* FCDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D9A0118A8A6C300D9C7AE /* FCDictionary.m */; };
 		8D6510D4189C3E2E00219DE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6510D3189C3E2E00219DE7 /* Foundation.framework */; };
 		8D6510D6189C3E2E00219DE7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6510D5189C3E2E00219DE7 /* CoreGraphics.framework */; };
 		8D6510D8189C3E2E00219DE7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6510D7189C3E2E00219DE7 /* UIKit.framework */; };
@@ -22,7 +24,6 @@
 		8D6510F8189C3E2F00219DE7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6510D7189C3E2E00219DE7 /* UIKit.framework */; };
 		8D651100189C3E2F00219DE7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D6510FE189C3E2F00219DE7 /* InfoPlist.strings */; };
 		8D651102189C3E2F00219DE7 /* FlashCards2014Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D651101189C3E2F00219DE7 /* FlashCards2014Tests.m */; };
-		8D9447A018A1FE4E00262E26 /* FCCardsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D94479F18A1FE4E00262E26 /* FCCardsView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D3D99FC18A8A67500D9C7AE /* FCCardsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCCardsView.h; path = aux/FCCardsView.h; sourceTree = "<group>"; };
+		8D3D99FD18A8A67500D9C7AE /* FCCardsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCCardsView.m; path = aux/FCCardsView.m; sourceTree = "<group>"; };
+		8D3D9A0018A8A6C300D9C7AE /* FCDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCDictionary.h; path = model/FCDictionary.h; sourceTree = "<group>"; };
+		8D3D9A0118A8A6C300D9C7AE /* FCDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCDictionary.m; path = model/FCDictionary.m; sourceTree = "<group>"; };
 		8D6510D0189C3E2E00219DE7 /* FlashCards2014.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashCards2014.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D6510D3189C3E2E00219DE7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8D6510D5189C3E2E00219DE7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -57,8 +62,6 @@
 		8D6510FD189C3E2F00219DE7 /* FlashCards2014Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlashCards2014Tests-Info.plist"; sourceTree = "<group>"; };
 		8D6510FF189C3E2F00219DE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D651101189C3E2F00219DE7 /* FlashCards2014Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlashCards2014Tests.m; sourceTree = "<group>"; };
-		8D94479E18A1FE4E00262E26 /* FCCardsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCCardsView.h; sourceTree = "<group>"; };
-		8D94479F18A1FE4E00262E26 /* FCCardsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCCardsView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D3D99FB18A8A63600D9C7AE /* aux */ = {
+			isa = PBXGroup;
+			children = (
+				8D3D99FC18A8A67500D9C7AE /* FCCardsView.h */,
+				8D3D99FD18A8A67500D9C7AE /* FCCardsView.m */,
+			);
+			name = aux;
+			sourceTree = "<group>";
+		};
+		8D3D99FF18A8A68100D9C7AE /* model */ = {
+			isa = PBXGroup;
+			children = (
+				8D3D9A0018A8A6C300D9C7AE /* FCDictionary.h */,
+				8D3D9A0118A8A6C300D9C7AE /* FCDictionary.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
 		8D6510C7189C3E2E00219DE7 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +139,8 @@
 		8D6510D9189C3E2E00219DE7 /* FlashCards2014 */ = {
 			isa = PBXGroup;
 			children = (
+				8D3D99FF18A8A68100D9C7AE /* model */,
+				8D3D99FB18A8A63600D9C7AE /* aux */,
 				8D6510E2189C3E2F00219DE7 /* FCAppDelegate.h */,
 				8D6510E3189C3E2F00219DE7 /* FCAppDelegate.m */,
 				8D6510E5189C3E2F00219DE7 /* Main.storyboard */,
@@ -127,8 +150,6 @@
 				8D6510EC189C3E2F00219DE7 /* FCSecondViewController.m */,
 				8D6510EE189C3E2F00219DE7 /* Images.xcassets */,
 				8D6510DA189C3E2E00219DE7 /* Supporting Files */,
-				8D94479E18A1FE4E00262E26 /* FCCardsView.h */,
-				8D94479F18A1FE4E00262E26 /* FCCardsView.m */,
 			);
 			path = FlashCards2014;
 			sourceTree = "<group>";
@@ -265,8 +286,9 @@
 			files = (
 				8D6510E0189C3E2F00219DE7 /* main.m in Sources */,
 				8D6510EA189C3E2F00219DE7 /* FCFirstViewController.m in Sources */,
-				8D9447A018A1FE4E00262E26 /* FCCardsView.m in Sources */,
+				8D3D99FE18A8A67500D9C7AE /* FCCardsView.m in Sources */,
 				8D6510E4189C3E2F00219DE7 /* FCAppDelegate.m in Sources */,
+				8D3D9A0218A8A6C300D9C7AE /* FCDictionary.m in Sources */,
 				8D6510ED189C3E2F00219DE7 /* FCSecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

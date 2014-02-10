@@ -7,27 +7,23 @@
 //
 
 #import "FCSecondViewController.h"
-#import "FCCardsView.h"
+#import "FCDictionary.h"
 
 @interface FCSecondViewController ()
-
+@property (strong, nonatomic) FCDictionary *dictionary;
 @end
 
 @implementation FCSecondViewController
-{
-    NSArray *words;
-}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //Later on, the data will be loaded from a model, and some will be added on the fly
-    words = [NSMutableArray arrayWithObjects:@"Articulate", @"Recuperate", @"Diligent", @"Mundane", @"Procrastinate", @"Tenatcious", nil];
+    _dictionary = [[FCDictionary alloc] init];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [words count];
+    return [[_dictionary words] count];
 }
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -40,7 +36,7 @@
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:wordsTableIdentifier];
     }
-    cell.textLabel.text = [words objectAtIndex:indexPath.row];
+    cell.textLabel.text = [[_dictionary words] objectAtIndex:indexPath.row];
     return cell;
 }
 
