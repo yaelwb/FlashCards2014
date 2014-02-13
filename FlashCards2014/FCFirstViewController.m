@@ -20,29 +20,23 @@
 {
     [super viewDidLoad];
     [_word setText:[_dictionary getFirstWord]];
-
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)next:(id)sender
 {
     [_word setText:[_dictionary getNextWord]];
+    [_definition setText:@""];
+    [_hint setText:@""];
 }
 
 - (IBAction)showDef:(id)sender
 {
-    [_definition setText:@"Def"];
+    [_definition setText:[_dictionary getDefAtIndex:[_dictionary currentIndex]]];
 }
 
 - (IBAction)showHint:(id)sender
 {
-    [_hint setText:@"Hint"];
+    [_hint setText:[_dictionary getHintAtIndex:[_dictionary currentIndex]]];
 }
 
 

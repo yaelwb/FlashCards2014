@@ -20,27 +20,15 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [[_dictionary words] count];
+    return [_dictionary wordCount];
 }
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *wordsTableIdentifier = @"wordsTableCell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:wordsTableIdentifier];
-    
-    if(cell == nil)
-    {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:wordsTableIdentifier];
-    }
-    cell.textLabel.text = [[_dictionary words] objectAtIndex:indexPath.row];
+    UITableViewCell *cell = [[UITableViewCell alloc] init];
+    cell.textLabel.text = [_dictionary getWordAtIndex:indexPath.row];
     return cell;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end

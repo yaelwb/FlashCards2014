@@ -142,6 +142,7 @@
                                 <rect key="frame" x="-8" y="86" width="776" height="890"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <sections/>
                                 <connections>
                                     <outlet property="dataSource" destination="8rJ-Kc-sve" id="2Rs-8q-dP4"/>
                                     <outlet property="delegate" destination="8rJ-Kc-sve" id="6D8-L8-w0q"/>

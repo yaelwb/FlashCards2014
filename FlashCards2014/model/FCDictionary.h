@@ -9,11 +9,15 @@
 #import <Foundation/Foundation.h>
 
 @interface FCDictionary : NSObject
-@property (strong, nonatomic) NSMutableArray *words;
 
--(void) incIndex;
--(int) index;
+-(int) wordCount;
+-(void) incCurrentIndex;
+-(int) currentIndex;
 -(NSString*) getNextWord;
 -(NSString*) getFirstWord;
+-(NSString*) getWordAtIndex:(int)index;
+-(NSString*) getDefAtIndex:(int)index;
+-(NSString*) getHintAtIndex:(int)index;
+
 
 @end
